@@ -6,9 +6,10 @@ class tarefaRepository
     private string $nome;
     private string $descricao;
 
-    public function __construct()
+    public function __construct(int $id, string $nome, string $descricao)
     {
-        
+        $this->id = $id;
+        $this->nome = $nome;
+        $this->descricao = $descricao;
     }
-
 }
