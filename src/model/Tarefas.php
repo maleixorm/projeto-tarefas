@@ -1,6 +1,6 @@
 <?php
 
-class tarefaRepository
+class Tarefas
 {
     private int $id;
     private string $nome;
@@ -11,5 +11,20 @@ class tarefaRepository
         $this->id = $id;
         $this->nome = $nome;
         $this->descricao = $descricao;
+    }
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getNome() : string
+    {
+        return $this->nome;    
+    }
+
+    public function getDescricao() : string
+    {
+        return $this->descricao;    
     }
 }
